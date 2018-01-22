@@ -1,0 +1,52 @@
+.container h4, h1, h2, h3, h5, p, a{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	margin-top: 2em;
+}
+body{
+	background-color: #4D4D4D;
+}
+h4{
+	display: inline-block;
+	margin: auto 0.5em;
+	min-width:24px;
+}
+.thatsabutton:hover{
+	cursor: pointer;
+}
+.roundborder{
+	border: 3px solid #edaa58;
+	border-radius: 50%;
+}
+#bottimer{
+	display: block;
+	padding: 4em;
+	height: 16em;
+	margin-top: 6em;
+	max-width: 16em;
+	background: linear-gradient(0deg, #edaa58 0%, #4D4D4D 0%);
+	box-shadow: inset 0 0 0 3px #4D4D4D;
+}
+#bottimer h2{
+	display: inline-block;
+}
+h1{
+	font-size: 3em;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+h5, h4{
+	font-size: 1.25em;
+	vertical-align: middle;
+}
+button:focus {
+	outline:0;
+}
+.btn{
+	width: 32px;
+}
