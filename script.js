@@ -54,6 +54,7 @@ $(document).ready(function(){
 			$("#sessionname").text("Work!");
 			currSession--;
 			$("#pomodorotime").text(checkLength(Math.floor(currSession / 60)) + ":" + checkLength((currSession % 60)));
+			$("#bottimer").css("border", "3px solid #edaa58");
 			updateFill(sessiontime, currSession, "session");
 		}
 	}
@@ -67,6 +68,7 @@ $(document).ready(function(){
 			$("#sessionname").text("Break!");
 			currBreak--;
 			$("#pomodorotime").text(checkLength(Math.floor(currBreak / 60)) + ":" + checkLength(currBreak % 60));
+			$("#bottimer").css("border", "3px solid #52be7f");
 			updateFill(breaktime, currBreak, "break");
 		}
 	}
@@ -77,7 +79,8 @@ $(document).ready(function(){
 		currBreak = breaktime;
 		currSession = sessiontime;
 		updateFill(1, 100, "break");
-		$("#pomodorotime").text(checkLength(sessiontime / 60) + ":" + checkLength(breaktime % 60));
+		$("#pomodorotime").text(checkLength(sessiontime / 60) + ":" + checkLength(sessiontime % 60));
+		$("#bottimer").css("border", "3px solid #edaa58");
 	}
 	function checkLength(num){
 		if (num < 10){
